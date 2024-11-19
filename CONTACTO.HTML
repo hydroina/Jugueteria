@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Tienda de Juguetes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .section-title {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2rem;
+      color: #007bff;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #ffcc00;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tienda de Juguetes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="./index.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="./index.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="container">
+    <h2 class="section-title">¡Contáctanos!</h2>
+    <div class="alert alert-success" role="alert">
+      ¡Tu mensaje ha sido enviado exitosamente!
+    </div>
+    <form action="#" method="POST">
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    <p>¡Gracias por visitar nuestra tienda de juguetes!</p>
+    <p>Dirección: Calle: Rue de la Pipi et Caquillage
+        Ciudad: Béton-sur-Mer
+        País: Le Rire (Francia)</p>
+    <p><a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
